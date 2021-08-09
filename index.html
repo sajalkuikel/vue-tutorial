@@ -5,47 +5,22 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
     <title>Document</title>
 
 </head>
 <body>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
 <div id="root">
-    <ul>
-        <li v-for="name in names" v-text="name"></li>
-        <!--        equivalent-->
-<!--        <li v-for="name in names" > {{ name }} </li>-->
-    </ul>
+ <task-list> </task-list>
 
-    <input type="text" v-model="newName">
-
-    <button @click="addName"> Add name</button>
 </div>
 
-
-<script>
-
-
-new Vue({
-
-    el:'#root',
-    data: {
-        names : ['Sajal', 'Kuiel' ]
-    },
-
-    methods :{
-        addName(){
-            this.names.push(this.newName);
-            this.newName ='';
-        }
-    }
-})
-
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
